@@ -9,7 +9,7 @@
       <!-- Bootstrap core CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
       <!-- Custom styles for this template -->
-      <link href="/css/modern-business.css" rel="stylesheet">
+      <link href="css/modern-business.css" rel="stylesheet">
    </head>
    <body>
       <!-- Navigation -->
@@ -78,9 +78,7 @@
       <!-- Page Content -->
       <div class="container">
          <!-- Page Heading/Breadcrumbs -->
-         <h1 class="mt-4 mb-3">Contact
-            <small>Subheading</small>
-         </h1>
+         <h1 class="mt-4 mb-3">Contact</h1>
          <ol class="breadcrumb">
             <li class="breadcrumb-item">
                <a href="/">Home</a>

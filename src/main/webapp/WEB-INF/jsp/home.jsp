@@ -88,27 +88,35 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item active" style="background-image: url('http://www.srsconsultinginc.com/wp-content/uploads/2011/12/banner11.jpg'); background-size: cover;">
             <div class="carousel-caption d-none d-md-block">
               <h3>First Slide</h3>
               <p>This is a description for the first slide.</p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item" style="background-image: url('http://www.srsconsultinginc.com/wp-content/uploads/2011/12/SRS31.jpg'); background-size: cover;">
             <div class="carousel-caption d-none d-md-block">
               <h3>Second Slide</h3>
               <p>This is a description for the second slide.</p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item" style="background-image: url('http://www.srsconsultinginc.com/wp-content/uploads/2011/12/SRS41.jpg'); background-size: cover;">
             <div class="carousel-caption d-none d-md-block">
               <h3>Third Slide</h3>
               <p>This is a description for the third slide.</p>
+            </div>
+          </div>
+          <!-- Slide Four - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('http://www.srsconsultinginc.com/wp-content/uploads/2011/12/SRS021.jpg'); background-size: cover;">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Fourth Slide</h3>
+              <p>This is a description for the Fourth slide.</p>
             </div>
           </div>
         </div>
@@ -167,18 +175,22 @@
       <!-- Features Section -->
       <div class="row">
         <div class="col-lg-6">
-          <h2>Modern Business Features</h2>
-          <p>The Modern Business template by Start Bootstrap includes:</p>
+          <h2>SRS Philosophy & Approach</h2>
+          <p>Consulting Plus, our approach to engaging with clients guarantees more than just our technology expertise. Our entire approach is geared to maximize value for our clients and deliver an experience that not just meets, but exceeds all expectations.
+             Our service spectrum is comprehensive and aimed at addressing any and every technology need that your organization may have.
+             The SRS Consulting Service Suite can be broadly classified into:</p>
           <ul>
             <li>
-              <strong>Bootstrap v4</strong>
+              <strong>Business Consulting</strong>
             </li>
-            <li>jQuery</li>
-            <li>Font Awesome</li>
-            <li>Working contact form with validation</li>
-            <li>Unstyled page elements for easy customization</li>
+            <li>Application Consulting</li>
+            <li>Human Capital Consulting</li>
+            <li>Public Sector</li>
+            <li>Delivery & Engagement Models</li>
           </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+          <p>SRS provides a comprehensive spectrum of services to help organizations realize their strategic business objectives through innovative technology solutions that measurably improve performance.
+             We amalgamate our deep technology expertise with industry specific business insights and cross-sector best practices to create and deliver solutions that help our clients achieve their strategic business objectives and stay ahead of the competition.
+             We do this by designing, developing, deploying, and maintaining solutions that help our clients put in place an efficient, and highly responsive IT infrastructure that is strategically aligned with their business outcomes and addresses challenges like costs, scalability, agility, and risk management. </p>
         </div>
         <div class="col-lg-6">
           <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
@@ -191,10 +203,10 @@
       <!-- Call to Action Section -->
       <div class="row mb-4">
         <div class="col-md-8">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+          <p>To find out more about each of these service offerings, please explore our website. To know how we can help your organization streamline its technology investments and maximize its business impact, get in touch with us today.</p>
         </div>
         <div class="col-md-4">
-          <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+          <a class="btn btn-lg btn-secondary btn-block" href="contact">Contact Us Today!</a>
         </div>
       </div>
 
