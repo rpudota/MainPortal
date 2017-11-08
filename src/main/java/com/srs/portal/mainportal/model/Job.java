@@ -1,19 +1,26 @@
 package com.srs.portal.mainportal.model;
 
 import javax.persistence.Entity;
+import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.Date;
 
 @Entity // This tells Hibernate to make a table out of this class
-public class User {
+public class Job {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
 
-    private String name;
+    private String jobId;
 
-    private String email;
+    private String jobTitle;
+
+    @Column(length=10000)
+    private String jobDescription;
+
+    public Date jobPostingDate;
 
     public Integer getId() {
         return id;
@@ -23,21 +30,35 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getJobId() {
+        return jobId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setJobId(String jobId) {
+        this.jobId = jobId;
     }
 
-    public String getEmail() {
-        return email;
+    public String getJobTitle() {
+        return jobTitle;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
     }
 
+    public String getJobDescription() {
+        return jobDescription;
+    }
 
+    public void setJobDescription(String jobDescription) {
+        this.jobDescription = jobDescription;
+    }
+
+    public Date getJobPostingDate() {
+        return jobPostingDate;
+    }
+
+    public void setJobPostingDate(Date jobPostingDate) {
+        this.jobPostingDate = jobPostingDate;
+    }
 }
