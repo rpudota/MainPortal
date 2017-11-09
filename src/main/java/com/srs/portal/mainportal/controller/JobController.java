@@ -2,6 +2,7 @@ package com.srs.portal.mainportal.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -32,10 +33,18 @@ public class JobController {
             jobRepository.save(job);
             return ResponseEntity.status(HttpStatus.CREATED).build();
     }
-
     @GetMapping(path="/all")
-    public @ResponseBody Iterable<Job> getAllUsers() {
+    public @ResponseBody Iterable<Job> getAllJobs() {
         // This returns a JSON or XML with the users
+
         return jobRepository.findAll();
     }
+
+    @GetMapping(path="/viewAll")
+    public String  displayAllJobs(Model model) {
+        // This returns a JSON or XML with the users
+        model.addAttribute("allJobs", getAllJobs());
+        return "jobs";
+    }
+
 }
