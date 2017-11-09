@@ -59,7 +59,7 @@
                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                   <a class="dropdown-item" href="portfolio-1-col.html">Jobs @ SRS</a>
                   <a class="dropdown-item" href="portfolio-2-col.html">Why SRS</a>
-                  <a class="dropdown-item" href="portfolio-3-col.html">Current Opportunities</a>
+                  <a class="dropdown-item" href="/job/viewAll">Current Opportunities</a>
                </div>
             </li>
             <li class="nav-item dropdown">
