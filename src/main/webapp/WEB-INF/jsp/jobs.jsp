@@ -106,15 +106,10 @@
 
       <c:forEach items="${allJobs}" var="element">
         <div class="row">
-                <div class="col-md-7">
-                  <a href="#">
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
-                  </a>
-                </div>
-                <div class="col-md-5">
+                <div class="col-md-10">
                   <h3>${element.jobTitle}</h3>
                   <p>${element.jobDescription}</p>
-                  <a class="btn btn-primary" href="#">View Project
+                  <a class="btn btn-primary" href="/job/details?id=${element.jobId}">View Project
                     <span class="glyphicon glyphicon-chevron-right"></span>
                   </a>
                 </div>
