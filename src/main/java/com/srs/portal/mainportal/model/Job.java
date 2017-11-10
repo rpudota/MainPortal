@@ -5,7 +5,6 @@ import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.util.Date;
 
 @Entity // This tells Hibernate to make a table out of this class
 public class Job {
@@ -20,7 +19,7 @@ public class Job {
     @Column(length=10000)
     private String jobDescription;
 
-    public Date jobPostingDate;
+    public String jobPostingDate;
 
     public Integer getId() {
         return id;
@@ -54,11 +53,11 @@ public class Job {
         this.jobDescription = jobDescription;
     }
 
-    public Date getJobPostingDate() {
+    public String getJobPostingDate() {
         return jobPostingDate;
     }
 
-    public void setJobPostingDate(Date jobPostingDate) {
+    public void setJobPostingDate(String jobPostingDate) {
         this.jobPostingDate = jobPostingDate;
     }
 }
