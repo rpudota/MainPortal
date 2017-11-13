@@ -1,3 +1,5 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ page import="com.srs.portal.mainportal.model.Customer"%>
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -10,6 +12,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
       <!-- Custom styles for this template -->
       <link href="css/modern-business.css" rel="stylesheet">
+      <link rel='stylesheet' href='css/email-style.css' type='text/css' media='all' />
    </head>
    <body>
       <!-- Navigation -->
@@ -115,42 +118,48 @@
          </div>
          <!-- /.row -->
          <!-- Contact Form -->
-         <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-         <div class="row">
-            <div class="col-lg-8 mb-4">
-               <h3>Send us a Message</h3>
-               <form name="sentMessage" id="contactForm" novalidate>
-                  <div class="control-group form-group">
-                     <div class="controls">
-                        <label>Full Name:</label>
-                        <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-                        <p class="help-block"></p>
-                     </div>
-                  </div>
-                  <div class="control-group form-group">
-                     <div class="controls">
-                        <label>Phone Number:</label>
-                        <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
-                     </div>
-                  </div>
-                  <div class="control-group form-group">
-                     <div class="controls">
-                        <label>Email Address:</label>
-                        <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-                     </div>
-                  </div>
-                  <div class="control-group form-group">
-                     <div class="controls">
-                        <label>Message:</label>
-                        <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-                     </div>
-                  </div>
-                  <div id="success"></div>
-                  <!-- For success/fail messages -->
-                  <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
-               </form>
-            </div>
-         </div>
+         <div id="central">
+         		<div class="content">
+         			<h1>Contact Form</h1>
+         			<p>Send your comments through this form and we will get back to
+         				you.</p>
+         			<div id="message">
+         				<form:form method="POST" action="/sendemail" modelAttribute="customer"
+         					novalidate="novalidate">
+         					<div class="label">Name:</div>
+         					<div class="field">
+         						<form:input type="text" id="pp-name" name="name"
+         							placeholder="enter your name here" title="Please enter your name"
+         							class="required" aria-required="true" path="name"/>
+         					</div>
+         					<div class="label">Email:</div>
+         					<div class="field">
+         						<form:input type="text" id="pp-email" name="email"
+         							placeholder="enter your email address here"
+         							title="Please enter your email address" class="required email"
+         							aria-required="true" path="email"/>
+         					</div>
+         					<div class="label">Phone Number:</div>
+         					<div class="field">
+         						<form:input type="text" id="pp-phone" name="phone"
+         							placeholder="enter your phone number here"
+         							title="Please enter your phone number" class="required phone"
+         							aria-required="true" path="phone"/>
+         					</div>
+         					<div class="label">Message:</div>
+         					<div class="field">
+         						<form:input id="about-project" name="message"
+         							placeholder="enter your message here" path="message"/>
+         					</div>
+         					<div id="mail-status"></div>
+         					<input type="submit" name="submit" value="Send Message"
+         						id="send-message" style="clear: both;"/>
+
+         				</form:form>
+         			</div>
+         		</div>
+         		<!-- content -->
+         	</div
          <!-- /.row -->
       </div>
       <!-- /.container -->
